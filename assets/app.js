@@ -385,13 +385,13 @@
     var key = el("p", { "class": "trend-key" }, [el("span", { "class": "k-item" }, [el("span", { "class": "k-dot", "aria-hidden": "true" }), "One poll\u2019s result"]), el("span", { "class": "k-item" }, [el("span", { "class": "k-line", "aria-hidden": "true" }), "14-day average"])]);
     // Say so when some points rest on only one or two polls (checked from the data, so it stays true as polls are added).
     var thin = ends.some(function (t) { return polls.filter(function (q) { var u = toDate(q.end); return u <= t && u > t - 14 * DAY; }).length <= 2; });
-    var note = el("p", { "class": "trend-note", text: "Why dots sit above or below the lines: each poll is a separate estimate, and pollsters often differ by a few points. Each point on the line averages the polls whose fieldwork ended in the 14 days up to that date, so it smooths out those differences instead of joining the dots." +
-      (thin ? " Where only one or two polls fall in the 14 days, a single poll can move the line noticeably; point to the chart to see how many polls each point uses." : "") });
+    var note = el("p", { "class": "trend-note", text: "Why the dots don\u2019t sit on the lines: polls often differ by a few points. Each point on a line averages the polls from the 14 days up to that date, so it\u2019s steadier than any one poll." +
+      (thin ? " When only one or two polls are in the average, a single poll can still move the line a lot." : "") });
     // The poll details sit inside the chart card, right under it, so the chart and the details can be read together.
     wrap.appendChild(legend); wrap.appendChild(chart); wrap.appendChild(key); wrap.appendChild(detail); wrap.appendChild(tip);
     detail.textContent = "Point to or tap the chart (or use the arrow keys) to see the average for any date and which polls it uses.";
     // Explanations go below the card, as notes.
-    var notes = el("div", { "class": "trend-notes" }, [note, el("p", { "class": "trend-note", text: "Te Tai Tokerau Party isn't reported separately in most polls, so it isn't in these charts." })]);
+    var notes = el("div", { "class": "trend-notes" }, [note, el("p", { "class": "trend-note", text: "Te Tai Tokerau Party isn\u2019t shown because most polls don\u2019t report it separately." })]);
     wrap.insertAdjacentElement("afterend", notes);
 
     var table = document.getElementById("poll-table");
