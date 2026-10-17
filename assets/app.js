@@ -390,7 +390,7 @@
       (thin ? " Where only one or two polls fall in the 14 days, a single poll can move the line noticeably; point to the chart to see how many polls each point uses." : "") });
     // The poll details sit inside the chart card, right under it, so the chart and the details can be read together.
     wrap.appendChild(legend); wrap.appendChild(chart); wrap.appendChild(key); wrap.appendChild(detail); wrap.appendChild(tip);
-    detail.textContent = "Point to or tap the chart (or use the arrow keys) to see the figures for a date and the polls that ended that day.";
+    detail.textContent = "Point to or tap the chart (or use the arrow keys) to see the average for any date and which polls it uses.";
     // Explanations go below the card, as notes.
     var notes = el("div", { "class": "trend-notes" }, [note, el("p", { "class": "trend-note", text: "Te Tai Tokerau Party isn't reported separately in most polls, so it isn't in these charts." })]);
     wrap.insertAdjacentElement("afterend", notes);
