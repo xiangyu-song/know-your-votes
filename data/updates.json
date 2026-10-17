@@ -2,6 +2,10 @@
  "updates": [
   {
    "date": "2026-10-18",
+   "text": "Election news card: added Newsroom's Election 2026 page (link supplied and opened by the owner; Newsroom blocks automated checks)."
+  },
+  {
+   "date": "2026-10-18",
    "text": "Election news card: added Stuff's NZ Election 2026 topic page (link supplied and opened by the owner; Stuff's page loads in the browser, so automated checks only see a generic title)."
   },
   {
