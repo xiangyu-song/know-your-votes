@@ -1,68 +1,72 @@
 {
-  "updates": [
-    {
-      "date": "2026-10-17",
-      "text": "NZ Herald debates on 14 and 21 October: added that they also air on Three and ThreeNow (NZME)."
-    },
-    {
-      "date": "2026-10-17",
-      "text": "Removed NZ First's 'all gangs should be designated terrorist entities' item from Crime and justice: it is a petition, not a policy, and is no longer on NZ First's policy list."
-    },
-    {
-      "date": "2026-10-17",
-      "text": "Every policy quote re-checked against the visible text on its linked page. 28 more quotes replaced: 6 that came from hidden page summaries or left out conditions (Labour student debt and prescriptions; National small businesses and welfare; NZ First KiwiSaver and SME tax), and 22 general statements swapped for the specific commitment on the same page (ACT 3, Green 5, Labour 2, National 5, NZ First 1, Opportunity 6). ACT housing quote added; Te Pāti Māori welfare line also shown under Welfare."
-    },
-    {
-      "date": "2026-10-17",
-      "text": "Seven policy quotes (Labour: maternity scans, AI; National: first home deposits, Home Energy Fund, consent laws, tougher sentences, paid parental leave) replaced with wording visible on each party's page, keeping start dates and conditions. Quote rule updated in 'How we chose these'."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Added a 'Before you vote' checklist, with how to fill in the voting paper and links to information in accessible formats and other languages."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Clearer notes on polls (the margin of error is smaller for parties polling lower, and how many polls each point uses) and on the seat calculator's starting point. Policy cards now read left to right."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Each Māori electorate debate is now listed separately by date, with its own watch link."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Re-checked every party's policy page. Te Tai Tokerau Party's tax holiday for new local businesses is now shown under Tax and government spending."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Added countdowns to advance voting, election day and official results, plus the Electoral Commission's latest enrolment figures."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Added the Electoral Commission's 2-minute video explaining MMP to 'Your two votes'."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Added a seat calculator: change the party votes to see how the 120 seats would be shared."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Poll charts now use party colours, and all parties are shown together in one trend chart."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Added the Whakaata Māori debates: the seven Māori electorate debates, Anamata – The Future Generations Debate and the Māori Leaders' Debate."
-    },
-    {
-      "date": "2026-10-16",
-      "text": "Accessibility improvements: better reflow on small screens, clearer headings for screen readers, and te reo Māori words marked for correct pronunciation."
-    },
-    {
-      "date": "2026-10-15",
-      "text": "Policies now show up to three quotes per party per topic, and link to Policy.nz for more detail."
-    },
-    {
-      "date": "2026-10-15",
-      "text": "Latest poll added: 1News–Verian, 8–12 October."
-    }
-  ]
+ "updates": [
+  {
+   "date": "2026-10-18",
+   "text": "Debates: added an 'Election news' card linking to the Election 2026 pages of 1News, NZ Herald, RNZ, Te Ao Māori News and The Spinoff (A to Z). Stuff and Newsroom to add once their election page links are confirmed."
+  },
+  {
+   "date": "2026-10-17",
+   "text": "NZ Herald debates on 14 and 21 October: added that they also air on Three and ThreeNow (NZME)."
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Removed NZ First's 'all gangs should be designated terrorist entities' item from Crime and justice: it is a petition, not a policy, and is no longer on NZ First's policy list."
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Every policy quote re-checked against the visible text on its linked page. 28 more quotes replaced: 6 that came from hidden page summaries or left out conditions (Labour student debt and prescriptions; National small businesses and welfare; NZ First KiwiSaver and SME tax), and 22 general statements swapped for the specific commitment on the same page (ACT 3, Green 5, Labour 2, National 5, NZ First 1, Opportunity 6). ACT housing quote added; Te Pāti Māori welfare line also shown under Welfare."
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Seven policy quotes (Labour: maternity scans, AI; National: first home deposits, Home Energy Fund, consent laws, tougher sentences, paid parental leave) replaced with wording visible on each party's page, keeping start dates and conditions. Quote rule updated in 'How we chose these'."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Added a 'Before you vote' checklist, with how to fill in the voting paper and links to information in accessible formats and other languages."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Clearer notes on polls (the margin of error is smaller for parties polling lower, and how many polls each point uses) and on the seat calculator's starting point. Policy cards now read left to right."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Each Māori electorate debate is now listed separately by date, with its own watch link."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Re-checked every party's policy page. Te Tai Tokerau Party's tax holiday for new local businesses is now shown under Tax and government spending."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Added countdowns to advance voting, election day and official results, plus the Electoral Commission's latest enrolment figures."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Added the Electoral Commission's 2-minute video explaining MMP to 'Your two votes'."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Added a seat calculator: change the party votes to see how the 120 seats would be shared."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Poll charts now use party colours, and all parties are shown together in one trend chart."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Added the Whakaata Māori debates: the seven Māori electorate debates, Anamata – The Future Generations Debate and the Māori Leaders' Debate."
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Accessibility improvements: better reflow on small screens, clearer headings for screen readers, and te reo Māori words marked for correct pronunciation."
+  },
+  {
+   "date": "2026-10-15",
+   "text": "Policies now show up to three quotes per party per topic, and link to Policy.nz for more detail."
+  },
+  {
+   "date": "2026-10-15",
+   "text": "Latest poll added: 1News–Verian, 8–12 October."
+  }
+ ]
 }

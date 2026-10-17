@@ -819,7 +819,7 @@
       "dates": "How your party vote and electorate vote work",
       "two-votes": "What each party says, in its own words",
       "policies": "The latest polls and the seat calculator",
-      "polls": "Upcoming debates and where to watch",
+      "polls": "Upcoming debates, where to watch, and election news",
       "debates": "Five quick steps before you vote"
     };
     TABS.forEach(function (t, i) {

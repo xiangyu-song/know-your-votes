@@ -900,3 +900,6 @@ details.more[open] > summary::before, .more-rules[open] > summary::before { tran
 .d-video { white-space: nowrap; max-width: 100%; }
 @media (max-width: 389px) { .d-video { font-size: 0.84rem; gap: 0.35rem; padding-right: 0.7rem; } }
 @media (max-width: 339px) { .d-video { font-size: 0.8rem; gap: 0.3rem; padding-right: 0.6rem; white-space: normal; } }
+/* Election news links under the debates */
+.news-card { margin-top: 1.25rem; }
+.news-card .news-list { margin: 0.25rem 0 0.75rem; }
