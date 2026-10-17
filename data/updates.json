@@ -2,6 +2,10 @@
  "updates": [
   {
    "date": "2026-10-18",
+   "text": "Election news card: added Stuff's NZ Election 2026 topic page (link supplied and opened by the owner; Stuff's page loads in the browser, so automated checks only see a generic title)."
+  },
+  {
+   "date": "2026-10-18",
    "text": "Debates: added an 'Election news' card linking to the Election 2026 pages of 1News, NZ Herald, RNZ, Te Ao Māori News and The Spinoff (A to Z). Stuff and Newsroom to add once their election page links are confirmed."
   },
   {
