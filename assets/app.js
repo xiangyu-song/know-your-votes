@@ -270,13 +270,12 @@
     var tNew = toDate(newest.end);
     var inWin = polls.filter(function (p) { var u = toDate(p.end); return u <= tNew && u > tNew - 14 * DAY; });
     var short = { weekday: undefined, month: "short" };
-    var range = fmtDate(newest.end, short);
-    if (inWin.length > 1 && inWin[0].end !== newest.end) {
-      range = (inWin[0].end.slice(0, 7) === newest.end.slice(0, 7) ? fmtDate(inWin[0].end, { weekday: undefined, month: undefined }) + "–" : fmtDate(inWin[0].end, short) + " – ") + range;
-    }
+    // Same wording as the chart: the 14-day window itself, e.g. "29 Sep–12 Oct".
+    var wFrom = new Date(tNew - 13 * DAY).toISOString().slice(0, 10);
+    var range = ((wFrom.slice(0, 7) === newest.end.slice(0, 7) ? fmtDate(wFrom, { weekday: undefined, month: undefined }) : fmtDate(wFrom, short)) + "–" + fmtDate(newest.end, short)).replace(/Sept/g, "Sep");
     summary.appendChild(el("p", { "class": "bar-foot" }, [
       el("span", { text: "Dashed line: 5% threshold" }),
-      el("span", { text: "Average of " + inWin.length + (inWin.length === 1 ? " poll" : " polls") + " whose fieldwork ended " + range + " (the 14 days up to the most recent poll), weighted by sample size." }),
+      el("span", { text: "Average of " + inWin.length + (inWin.length === 1 ? " poll" : " polls") + " ending " + range + " (the 14 days up to the most recent poll), weighted by sample size." }),
       el("span", null, ["Most recent: ", el("a", { href: newest.source, text: newest.pollster }), ", ends " + fmtDate(newest.end, short) + (data.checked ? ". Checked for newer polls " + fmtChecked(data.checked) : "") + "."])
     ]));
 
@@ -644,16 +643,18 @@
     var NAMES = Object.assign({}, POLL_NAMES, { TTT: "Te Tai Tokerau Party" });
     var codes = Object.keys(pollAverage).sort(function (a, b) { return pollAverage[b] - pollAverage[a]; }).concat(["TTT"]);
     var state = {};
-    function reset() { codes.forEach(function (c) { state[c] = { v: pollAverage[c] || 0, e: 0, n: null }; }); }
+    // A party the polls don't report (Te Tai Tokerau Party) starts with an empty party-vote box, not 0.0%, until a figure is typed.
+    function reset() { codes.forEach(function (c) { state[c] = { v: pollAverage[c] || 0, e: 0, n: null, np: pollAverage[c] == null }; }); }
     reset();
     var rows = {}, picked = {}, form = el("div", { "class": "seat-inputs" });
     form.appendChild(el("div", { "class": "seat-head", "aria-hidden": "true" }, [el("span", { text: "Party" }), el("span", { text: "Party vote" }), el("span", { text: "Wins elec\u00ADtorate" }), el("span", { "class": "sh-seats", text: "Seats" }), el("span", { "class": "sh-add", text: "Add up" })]));
     codes.forEach(function (c) {
       var id = "sv-" + c;
-      var num = el("input", { type: "number", id: id, min: "0", max: "100", step: "0.1", inputmode: "decimal", "aria-label": NAMES[c] + " party vote, percent" });
+      var num = el("input", { type: "number", id: id, min: "0", max: "100", step: "0.1", inputmode: "decimal", "aria-label": NAMES[c] + " party vote, percent" + (pollAverage[c] == null ? " (not reported in polls; type a figure to try one)" : "") });
+      if (pollAverage[c] == null) num.setAttribute("placeholder", "\u2013");
       var tick = el("input", { type: "checkbox", id: "se-" + c });
       var count = el("input", { type: "number", min: "0", max: "71", step: "1", inputmode: "numeric", "aria-label": NAMES[c] + ": number of electorates won (type 0 to untick)", title: "Electorates won (0 to untick)", hidden: "" });
-      num.addEventListener("input", function () { var v = parseFloat(num.value); if (!isNaN(v)) { state[c].v = Math.max(0, Math.min(100, v)); update(true); } });
+      num.addEventListener("input", function () { var v = parseFloat(num.value); if (!isNaN(v)) { state[c].v = Math.max(0, Math.min(100, v)); state[c].np = false; update(true); } });
       // Ticking "Wins electorate" starts the count at 1, which can then be changed. Deleting the number or typing 0 unticks it. Unticked: no number shown.
       tick.addEventListener("change", function () {
         state[c].n = null; state[c].e = tick.checked ? 1 : 0; update();
@@ -691,7 +692,7 @@
     function update(fromNumber) {
       codes.forEach(function (c) {
         var r = rows[c];
-        if (!fromNumber || document.activeElement !== r.num) r.num.value = state[c].v.toFixed(1);
+        if (!fromNumber || document.activeElement !== r.num) r.num.value = state[c].np ? "" : state[c].v.toFixed(1);
         r.tick.checked = state[c].e > 0;
         r.count.hidden = !(state[c].e > 0) && document.activeElement !== r.count;
         if (document.activeElement !== r.count) r.count.value = state[c].e > 0 ? state[c].e : "";
@@ -736,6 +737,7 @@
         : el("p", { "class": "seat-verdict empty", text: "Tick “Add up” to see if parties reach " + need + "." }));
       // Say why a party shows 0 seats, right under the result.
       if (overhang) out.appendChild(el("p", { "class": "seat-zero", text: "Overhang: a party that wins more electorates than its party vote earns keeps those seats, and Parliament grows above 120." }));
+      codes.forEach(function (c) { if (state[c].np) out.appendChild(el("p", { "class": "seat-zero", text: "\u2013 " + NAMES[c] + " isn't reported separately in most polls, so its party vote starts empty. Type a figure to try one." })); });
       if (codes.some(function (c) { return !seats[c]; })) out.appendChild(el("p", { "class": "seat-zero", text: "0 seats: the party is under 5% of the party vote with no electorate ticked. Tick Wins electorate to see what changes." }));
       out.appendChild(el("p", { "class": "seat-note", text: "Adding up seats is arithmetic only. It doesn't show which parties are willing to work together." }));
       clearTimeout(liveTimer);

@@ -895,3 +895,8 @@ details.more[open] > summary::before, .more-rules[open] > summary::before { tran
 .detail-polls a { white-space: nowrap; }
 @media (max-width: 719px) { .trend-key { font-size: 0.8rem; gap: 0.2rem 0.8rem; } }
 .detail-polls li:not(:last-child)::after { content: " · "; color: var(--muted); }
+.seat-num input::placeholder { color: var(--muted); opacity: 1; }
+/* Watch buttons stay on one line; slightly smaller text on narrow phones so the longest label fits. */
+.d-video { white-space: nowrap; max-width: 100%; }
+@media (max-width: 389px) { .d-video { font-size: 0.84rem; gap: 0.35rem; padding-right: 0.7rem; } }
+@media (max-width: 339px) { .d-video { font-size: 0.8rem; gap: 0.3rem; padding-right: 0.6rem; white-space: normal; } }
