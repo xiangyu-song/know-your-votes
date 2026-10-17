@@ -644,19 +644,19 @@
       var id = "sv-" + c;
       var num = el("input", { type: "number", id: id, min: "0", max: "100", step: "0.1", inputmode: "decimal", "aria-label": NAMES[c] + " party vote, percent" });
       var tick = el("input", { type: "checkbox", id: "se-" + c });
-      var count = el("input", { type: "number", min: "0", max: "71", step: "1", inputmode: "numeric", "aria-label": NAMES[c] + ": number of electorates won (empty counts as one; type 0 to untick)", title: "Electorates won (empty counts as one; 0 to untick)", hidden: "" });
+      var count = el("input", { type: "number", min: "0", max: "71", step: "1", inputmode: "numeric", "aria-label": NAMES[c] + ": number of electorates won (type 0 to untick)", title: "Electorates won (0 to untick)", hidden: "" });
       num.addEventListener("input", function () { var v = parseFloat(num.value); if (!isNaN(v)) { state[c].v = Math.max(0, Math.min(100, v)); update(true); } });
-      // Ticking "Wins electorate" counts one electorate and opens an empty box for the number; nothing is filled in for you.
+      // Ticking "Wins electorate" starts the count at 1, which can then be changed. Unticked: no number shown.
       tick.addEventListener("change", function () {
         state[c].n = null; state[c].e = tick.checked ? 1 : 0; update();
-        if (tick.checked) count.focus();
       });
       count.addEventListener("input", function () {
         var v = parseInt(count.value, 10);
-        if (isNaN(v)) { state[c].n = null; state[c].e = 1; update(true); }          // emptied while typing: stays empty
+        if (isNaN(v)) { state[c].n = null; state[c].e = 1; update(true); }          // emptied while typing: counts as 1, shows 1 again when you leave the box
         else if (v === 0) { state[c].n = null; state[c].e = 0; update(); tick.focus(); }
         else { state[c].n = Math.min(71, Math.max(1, v)); state[c].e = state[c].n; update(true); }
       });
+      count.addEventListener("blur", function () { update(); });
       var won = el("span", { "class": "seat-won", "aria-hidden": "true" });
       // Desktop: tick to add this party's seats to a possible government (phones use the chips below instead).
       var pick = el("input", { type: "checkbox", "aria-label": "Add up " + NAMES[c] + "'s seats" });
@@ -686,7 +686,7 @@
         if (!fromNumber || document.activeElement !== r.num) r.num.value = state[c].v.toFixed(1);
         r.tick.checked = state[c].e > 0;
         r.count.hidden = !(state[c].e > 0);
-        if (document.activeElement !== r.count) r.count.value = state[c].n ? state[c].n : "";
+        if (document.activeElement !== r.count) r.count.value = state[c].e > 0 ? state[c].e : "";
       });
       var total = codes.reduce(function (s, c) { return s + state[c].v; }, 0);
       var qual = {}; codes.forEach(function (c) { if (state[c].v >= 5 || state[c].e > 0) qual[c] = state[c].v; });
