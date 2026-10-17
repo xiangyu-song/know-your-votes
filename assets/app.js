@@ -282,7 +282,7 @@
 
     // One chart, every party: dots are single polls, lines are 14-day averages.
     // Size the drawing to the box, so text stays readable on phones.
-    var CW = Math.round(Math.max(300, Math.min(760, (wrap.clientWidth || 640) - 28))), CH = CW < 520 ? 225 : 320, CL = 34, CR = 12, CT = 10, CB = 26, cMax = CW < 520 ? 33 : 35;
+    var CW = Math.round(Math.max(300, Math.min(760, (wrap.clientWidth || 640) - 28))), CH = CW < 520 ? (window.innerHeight < 700 ? 180 : window.innerHeight < 800 ? 200 : 225) : 320, CL = 34, CR = 12, CT = 10, CB = 26, cMax = CW < 520 ? 33 : 35;
     function cx(t) { return CL + (t - x0) / (x1 - x0) * (CW - CL - CR); }
     function cy(v) { return CT + (1 - v / cMax) * (CH - CT - CB); }
     var avgs = {}; order.forEach(function (c) { avgs[c] = trailing(c); });
@@ -333,8 +333,13 @@
       var iso = new Date(t).toISOString().slice(0, 10);
       var rows = order.map(function (c) { return [c, avgAt(c, t)]; }).filter(function (r) { return r[1] !== null; }).sort(function (a, b) { return b[1] - a[1]; });
       tip.innerHTML = "";
-      var nPolls = polls.filter(function (q) { var u = toDate(q.end); return u <= t && u > t - 14 * DAY; }).length;
-      tip.appendChild(el("strong", { text: "14-day average, " + fmtDate(iso, { weekday: undefined, month: "short" }) + " (" + nPolls + (nPolls === 1 ? " poll)" : " polls)") }));
+      // The polls behind this point: every poll whose fieldwork ended in the 14 days up to this date (newest first).
+      var used = polls.filter(function (q) { var u = toDate(q.end); return u <= t && u > t - 14 * DAY; }).reverse();
+      var nPolls = used.length;
+      var wStart = new Date(t - 13 * DAY).toISOString().slice(0, 10);
+      var wRange = ((wStart.slice(0, 7) === iso.slice(0, 7) ? fmtDate(wStart, { weekday: undefined, month: undefined }) : fmtDate(wStart, { weekday: undefined, month: "short" })) + "–" + fmtDate(iso, { weekday: undefined, month: "short" })).replace(/Sept/g, "Sep");
+      var head = nPolls === 1 ? "Average of 1 poll ending " + wRange : "Average of " + nPolls + " polls ending " + wRange;
+      tip.appendChild(el("strong", { text: head }));
       var ol = el("ol");
       rows.forEach(function (r) { ol.appendChild(el("li", { style: "--tc:var(--t-" + r[0] + ")" }, [el("span", { text: POLL_NAMES[r[0]] }), el("b", { text: r[1].toFixed(1) + "%" })])); });
       tip.appendChild(ol);
@@ -345,16 +350,19 @@
       var left = px + (r.left - wr.left) + 12;
       if (left + tip.offsetWidth > wr.width - 8) left = px + (r.left - wr.left) - tip.offsetWidth - 12;
       tip.style.left = Math.max(8, left) + "px";
-      var ended = polls.filter(function (p) { return p.end === iso; });
       detail.innerHTML = "";
       if (narrow) {
         var avgList = el("ol", { "class": "detail-avg" });
         rows.forEach(function (r) { avgList.appendChild(el("li", { style: "--tc:var(--t-" + r[0] + ")" }, [el("span", { text: POLL_NAMES[r[0]] }), el("b", { text: r[1].toFixed(1) + "%" })])); });
-        detail.appendChild(el("strong", { "class": "detail-head", text: "14-day average, " + fmtDate(iso, { weekday: undefined, month: "short" }) + " (" + nPolls + (nPolls === 1 ? " poll)" : " polls)") }));
+        detail.appendChild(el("strong", { "class": "detail-head", text: head }));
         detail.appendChild(avgList);
       }
-      detail.appendChild(el("span", null, [el("strong", { text: "Polls ending " + fmtDate(iso, { weekday: undefined }) + ": " })].concat(
-        ended.reduce(function (acc, p, i) { if (i) acc.push("; "); acc.push(el("a", { href: p.source, text: p.pollster }), " (" + p.fieldwork + (p.commissioned_by ? ". " + p.commissioned_by : "") + ")"); return acc; }, []))));
+      // Every poll in this average, with the ones whose dots sit on the line you picked marked.
+      var list = el("ul", { "class": "detail-polls" });
+      used.forEach(function (p) {
+        list.appendChild(el("li", null, [el("a", { href: p.source, text: p.pollster }), "\u00a0" + fmtDate(p.end, { weekday: undefined, month: "short" }).replace(/ /g, "\u00a0").replace("Sept", "Sep") + (p.end === iso ? " (dots on this line)" : "")]));
+      });
+      detail.appendChild(el("div", { "class": "detail-pollwrap" }, [el("strong", { text: nPolls === 1 ? "Poll used: " : "Polls used: " }), list]));
     }
     function hide() { tip.hidden = true; cross.setAttribute("hidden", ""); }
     // Keyboard: focus the chart, then use the left and right arrow keys to step through poll dates.
@@ -375,7 +383,7 @@
     chart.addEventListener("pointerdown", function (e) { showAt(e.clientX); });
     chart.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") hide(); });
     document.addEventListener("pointerdown", function (e) { if (!wrap.contains(e.target)) hide(); });
-    var key = el("p", { "class": "trend-key" }, [el("span", { "class": "k-item" }, [el("span", { "class": "k-dot", "aria-hidden": "true" }), "Dot: one poll"]), el("span", { "class": "k-item" }, [el("span", { "class": "k-line", "aria-hidden": "true" }), "Line: 14-day average"])]);
+    var key = el("p", { "class": "trend-key" }, [el("span", { "class": "k-item" }, [el("span", { "class": "k-dot", "aria-hidden": "true" }), "One poll\u2019s result"]), el("span", { "class": "k-item" }, [el("span", { "class": "k-line", "aria-hidden": "true" }), "14-day average"])]);
     // Say so when some points rest on only one or two polls (checked from the data, so it stays true as polls are added).
     var thin = ends.some(function (t) { return polls.filter(function (q) { var u = toDate(q.end); return u <= t && u > t - 14 * DAY; }).length <= 2; });
     var note = el("p", { "class": "trend-note", text: "Why dots sit above or below the lines: each poll is a separate estimate, and pollsters often differ by a few points. Each point on the line averages the polls whose fieldwork ended in the 14 days up to that date, so it smooths out those differences instead of joining the dots." +
