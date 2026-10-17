@@ -11,8 +11,8 @@
    "link": "https://www.stuff.co.nz/politics/361037765/its-game-press-kingmakers-debate-locked-oct-1",
    "watch": {
     "url": "https://www.stuff.co.nz/politics/361041319/missed-it-watch-stuffs-kingmakers-debate-full",
-    "label": "Watch in full on Stuff",
-    "checked": "page opened"
+    "checked": "page opened",
+    "on": "Stuff"
    },
    "time": "7.30pm"
   },
@@ -25,8 +25,8 @@
    "link": "https://www.1news.co.nz/2026/10/06/leaders-debate-luxon-hipkins-square-off-a-month-out-from-election/",
    "watch": {
     "url": "https://www.1news.co.nz/2026/10/06/watch-again-tvnz-leaders-debate-chris-hipkins-v-christopher-luxon/",
-    "label": "Watch again (1News)",
-    "checked": "page opened 17 Oct; TVNZ+ page says the debate isn't available to watch right now"
+    "checked": "page opened 17 Oct; TVNZ+ page says the debate isn't available to watch right now",
+    "on": "1News"
    },
    "time": "7pm"
   },
@@ -40,8 +40,8 @@
    "link": "https://www.1news.co.nz/2026/10/13/kingmakers-to-face-off-in-tvnzs-multi-party-debate/",
    "watch": {
     "url": "https://www.1news.co.nz/2026/10/13/full-video-tvnz-multi-party-debate-peters-swarbrick-wong-waititi-and-seymour/",
-    "label": "Watch again (1News)",
-    "checked": "page opened"
+    "checked": "page opened",
+    "on": "1News"
    }
   },
   {
@@ -53,8 +53,8 @@
    "link": "https://www.nzme.co.nz/news/nzme-unveils-its-biggest-ever-election-coverage-for-2026",
    "watch": {
     "url": "https://www.nzherald.co.nz/nz/politics/election-2026-herald-leaders-debate-christopher-luxon-v-chris-hipkins/UFX3BMPUKNG7FOKGLKLW5JMVTU/",
-    "label": "Watch on NZ Herald",
-    "checked": "search result only; site blocks automated checks"
+    "checked": "search result only; site blocks automated checks",
+    "on": "NZ Herald"
    }
   },
   {
@@ -66,8 +66,8 @@
    "link": "https://www.stuff.co.nz/politics/361044506/two-leaders-debates-interactive-multichannel-election-night-special-stuff-group-launches-aotearoa",
    "watch": {
     "url": "https://www.stuff.co.nz/",
-    "label": "Watch live on Stuff",
-    "checked": "page opened"
+    "checked": "page opened",
+    "on": "Stuff"
    }
   },
   {
@@ -79,8 +79,8 @@
    "link": "https://www.nzme.co.nz/news/nzme-unveils-its-biggest-ever-election-coverage-for-2026",
    "watch": {
     "url": "https://www.nzherald.co.nz/promotions/the-new-zealand-herald-debate-series/DJBGX6TQLFGAVJKQY5V7XPVI2U/",
-    "label": "How to watch: NZ Herald",
-    "checked": "search result only; site blocks automated checks"
+    "checked": "search result only; site blocks automated checks",
+    "on": "NZ Herald"
    }
   },
   {
@@ -93,8 +93,8 @@
    "link": "https://www.tvnz.co.nz/tvseries/1-news-kaupapa-maori-debate",
    "watch": {
     "url": "https://www.tvnz.co.nz/tvseries/1-news-kaupapa-maori-debate",
-    "label": "Watch on TVNZ+",
-    "checked": "page opened"
+    "checked": "page opened",
+    "on": "TVNZ+"
    }
   },
   {
@@ -107,8 +107,8 @@
    "link": "https://www.tvnz.co.nz/tvseries/qa-the-peoples-debate",
    "watch": {
     "url": "https://www.tvnz.co.nz/tvseries/qa-the-peoples-debate",
-    "label": "Watch on TVNZ+",
-    "checked": "page opened 15 Oct: 'Watch live Thursday 5 November at 7pm'"
+    "checked": "page opened 15 Oct: 'Watch live Thursday 5 November at 7pm'",
+    "on": "TVNZ+"
    }
   },
   {
@@ -174,8 +174,8 @@
    "link": "https://www.maoriplus.co.nz/show/whakatau-election-2026-anamata-the-future-generations-debate",
    "watch": {
     "url": "https://www.maoriplus.co.nz/show/whakatau-election-2026-anamata-the-future-generations-debate",
-    "label": "Watch on MĀORI+",
-    "checked": "page opened"
+    "checked": "page opened",
+    "on": "MĀORI+"
    },
    "live_url": "https://www.maoriplus.co.nz/live"
   },
@@ -189,12 +189,12 @@
    "link": "https://www.whakaatamaori.co.nz/media-releases/whakatau-2026",
    "watch": {
     "url": "https://www.whakaatamaori.co.nz/media-releases/whakatau-2026",
-    "label": "Where to watch (Whakaata Māori)",
-    "checked": "page opened"
+    "checked": "page opened",
+    "on": "Whakaata Māori"
    },
    "live_url": "https://www.maoriplus.co.nz/live"
   }
  ],
- "to_check": "Other outlets (RNZ, Whakaata Māori, regional debates); Te Tai Tokerau Party participation",
- "video_rule": "Watch links go to the broadcaster's own page; videos are never embedded or copied. TVNZ+ may ask you to sign in with a free account. Where a debate has a live_url, the watch link goes there until the debate date has passed, then to its replay page."
+ "to_check": "Other outlets (RNZ, Whakaata Māori, regional debates); Te Tai Tokerau Party participation; Māori Leaders' Debate (28 Oct): after it airs, replace its watch link (now a Whakaata Māori media release) with the replay page",
+ "video_rule": "Watch links go to the broadcaster's own page; videos are never embedded or copied. TVNZ+ may ask you to sign in with a free account. Where a debate has a live_url, the watch link goes there until the debate date has passed, then to its replay page. Button wording is the same for every debate: \"Watch on [where]\" before it is held, \"Watch again on [where]\" afterwards."
 }

@@ -539,7 +539,7 @@
         var past = x.date < today;
         debates.push({ date: x.date, time: x.time, name: d.name.split(":")[0] + ": " + x.label + " electorate debate", host: d.host, where: d.where,
           who: "Candidates in " + x.label, link: d.link, live_url: d.live_url,
-          watch: { url: x.url, label: past ? "Watch again on MĀORI+" : "Watch live on MĀORI+" } });
+          watch: { url: x.url, on: "MĀORI+" } });
       });
     });
     var upcoming = debates.filter(function (d) { return d.date >= today; }).sort(function (a, b) { return a.date < b.date ? -1 : 1; });
@@ -554,8 +554,9 @@
         el("span", { "class": "d-meta", text: "Taking part: " + d.who })
       ];
       // Upcoming debates with a live page link there; once the date has passed, the replay link is used.
-      var watch = (!isHeld && d.live_url) ? { url: d.live_url, label: "Watch live on MĀORI+" } : d.watch;
-      if (watch) parts.push(el("a", { "class": "d-video", href: watch.url }, [playIcon(), el("span", { text: watch.label })]));
+      // Same wording for every debate: "Watch on [where]" before it's held, "Watch again on [where]" afterwards.
+      var watch = (!isHeld && d.live_url) ? { url: d.live_url, on: "MĀORI+" } : d.watch;
+      if (watch) parts.push(el("a", { "class": "d-video", href: watch.url }, [playIcon(), el("span", { text: (isHeld ? "Watch again on " : "Watch on ") + watch.on })]));
       return el("li", { "class": isHeld ? "held" : "" }, [
         el("span", { "class": "cal", "aria-hidden": "true" }, [el("span", { "class": "cal-m", text: mon }), el("span", { "class": "cal-d", text: String(dt.getUTCDate()) })]),
         el("div", null, parts)
