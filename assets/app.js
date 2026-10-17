@@ -646,13 +646,13 @@
       var tick = el("input", { type: "checkbox", id: "se-" + c });
       var count = el("input", { type: "number", min: "0", max: "71", step: "1", inputmode: "numeric", "aria-label": NAMES[c] + ": number of electorates won (type 0 to untick)", title: "Electorates won (0 to untick)", hidden: "" });
       num.addEventListener("input", function () { var v = parseFloat(num.value); if (!isNaN(v)) { state[c].v = Math.max(0, Math.min(100, v)); update(true); } });
-      // Ticking "Wins electorate" starts the count at 1, which can then be changed. Unticked: no number shown.
+      // Ticking "Wins electorate" starts the count at 1, which can then be changed. Deleting the number or typing 0 unticks it. Unticked: no number shown.
       tick.addEventListener("change", function () {
         state[c].n = null; state[c].e = tick.checked ? 1 : 0; update();
       });
       count.addEventListener("input", function () {
         var v = parseInt(count.value, 10);
-        if (isNaN(v)) { state[c].n = null; state[c].e = 1; update(true); }          // emptied while typing: counts as 1, shows 1 again when you leave the box
+        if (isNaN(v)) { state[c].n = null; state[c].e = 0; update(true); }          // emptied: unticks; box stays open so a new number can be typed, and closes when you leave it empty
         else if (v === 0) { state[c].n = null; state[c].e = 0; update(); tick.focus(); }
         else { state[c].n = Math.min(71, Math.max(1, v)); state[c].e = state[c].n; update(true); }
       });
@@ -685,7 +685,7 @@
         var r = rows[c];
         if (!fromNumber || document.activeElement !== r.num) r.num.value = state[c].v.toFixed(1);
         r.tick.checked = state[c].e > 0;
-        r.count.hidden = !(state[c].e > 0);
+        r.count.hidden = !(state[c].e > 0) && document.activeElement !== r.count;
         if (document.activeElement !== r.count) r.count.value = state[c].e > 0 ? state[c].e : "";
       });
       var total = codes.reduce(function (s, c) { return s + state[c].v; }, 0);
