@@ -1,6 +1,10 @@
 {
  "updates": [
   {
+   "date": "2026-10-19",
+   "text": "Desktop layout: wider page with three columns of party and debate cards; MMP video beside the two-vote cards; Vote Compass and Policy.nz shown as equal cards under Policies (Vote Compass menu item removed); quieter Sources links; shorter election-day timeline label."
+  },
+  {
    "date": "2026-10-18",
    "text": "Debates: Stuff Leaders' Debate (20 Oct) start time added: 7pm (Stuff, 15 Oct: \"Next Tuesday at 7pm\")."
   },

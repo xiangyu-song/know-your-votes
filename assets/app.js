@@ -797,7 +797,7 @@
     var TABS = [
       { id: "dates", label: "Dates", icon: "dates", parts: ["#dates", ".dates-body"] },
       { id: "two-votes", label: "Votes", icon: "votes", parts: ["#two-votes"] },
-      { id: "policies", label: "Policies", icon: "policies", parts: ["#policies", "#compare", "#parties"] },
+      { id: "policies", label: "Policies", icon: "policies", parts: ["#policies", "#parties"] },
       { id: "polls", label: "Polls", icon: "polls", parts: ["#polls", "#seats"] },
       { id: "debates", label: "Debates", icon: "debates", parts: ["#debates"] },
       { id: "before", label: "Checklist", icon: "check", parts: ["#before"] }

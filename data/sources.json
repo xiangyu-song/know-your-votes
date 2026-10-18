@@ -134,6 +134,18 @@
         "publisher": "Scoop",
         "url": "https://www.scoop.co.nz/stories/PO2609/S00223/policynz-returns-for-the-2026-election.htm",
         "supports": "plain, neutral summaries linked to sources, and coverage of elections since 2017"
+      },
+      {
+        "title": "Vote Compass 2026: Compare your views with party policies",
+        "publisher": "1News",
+        "url": "https://www.1news.co.nz/2026/10/04/vote-compass-2026-compare-your-views-with-party-policies/",
+        "supports": "What Vote Compass is, how it works, who built it, how party positions were set, and its limits"
+      },
+      {
+        "title": "Vote Compass – 2026 New Zealand General Election",
+        "publisher": "TVNZ (1News.co.nz/VoteCompass forwards here)",
+        "url": "https://votecompass.tvnz.co.nz/",
+        "supports": "The tool's address"
       }
     ],
     "debates": [
@@ -232,20 +244,6 @@
         "supports": "Party names and website addresses"
       }
     ],
-    "compare": [
-      {
-        "title": "Vote Compass 2026: Compare your views with party policies",
-        "publisher": "1News",
-        "url": "https://www.1news.co.nz/2026/10/04/vote-compass-2026-compare-your-views-with-party-policies/",
-        "supports": "What Vote Compass is, how it works, who built it, how party positions were set, and its limits"
-      },
-      {
-        "title": "Vote Compass – 2026 New Zealand General Election",
-        "publisher": "TVNZ (1News.co.nz/VoteCompass forwards here)",
-        "url": "https://votecompass.tvnz.co.nz/",
-        "supports": "The tool's address"
-      }
-    ],
     "votes": [
       {
         "title": "MMP (Mixed Member Proportional) video",
@@ -334,7 +332,6 @@
     "polls": "2026-10-18",
     "seats": "2026-10-18",
     "policies": "2026-10-18",
-    "compare": "2026-10-18",
     "debates": "2026-10-18",
     "parties": "2026-10-18",
     "before": "2026-10-18"

@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=20261018o">
+<link rel="stylesheet" href="assets/style.css?v=20261019a">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -52,7 +52,6 @@
       <a href="#dates">Dates</a>
       <a href="#two-votes">Your two votes</a>
       <a href="#policies">Policies</a>
-      <a href="#compare">Vote Compass</a>
       <a href="#polls">Polls</a>
       <a href="#debates">Debates</a>
       <a href="#parties">All parties</a>
@@ -80,7 +79,8 @@
 
   <section id="two-votes" class="wrap block" aria-labelledby="votes-title">
     <h2 id="votes-title">Your two votes</h2>
-    <p class="lede">Under MMP you get two votes, and you can give them to different parties. Watch the video or read the summary below.</p>
+    <p class="lede">Under MMP you get two votes, and you can give them to different parties. Watch the short video, or read the summary.</p>
+    <div class="mmp-row">
     <figure class="video">
       <button type="button" class="video-facade" data-id="BUvzE-s-430" aria-label="Play video: MMP (Mixed Member Proportional), 2 minutes, from the Electoral Commission">
         <img src="https://i.ytimg.com/vi/BUvzE-s-430/hqdefault.jpg" alt="" loading="lazy" width="480" height="360" onerror="this.remove()">
@@ -97,6 +97,7 @@
         <h3>Electorate vote</h3>
         <p>For your local MP. The candidate with the most votes in your electorate wins. There are 71 electorates: 64 general and 7 Māori.</p>
       </article>
+    </div>
     </div>
     <details class="rules more-rules">
       <summary><h3>How votes become seats</h3></summary>
@@ -121,28 +122,26 @@
     <p id="policy-showing" class="policy-showing" aria-live="polite"></p>
     <div id="policy-list" class="policy-list"></div>
     <p class="back-topics"><a href="#policy-controls">↑ Choose another topic or party</a></p>
-    <div class="tool-card">
-      <h3>Want more detail? Policy.nz</h3>
-      <p>Policy.nz summarises party policies topic by topic in plain, consistent language, with links to the original sources. It also lists each electorate's candidates, and can hide which party wrote each policy so you judge the idea first.</p>
-      <p class="tool-note">Run by Policy Limited, an independent, politically neutral project covering New Zealand elections since 2017. Not connected to Know Your Votes.</p>
-      <a class="d-video tool-go" href="https://policy.nz/2026">Open Policy.nz</a>
+    <h3 class="sub tools-title">Compare with other tools</h3>
+    <p class="lede">Two independent tools that look at the parties in different ways.</p>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>Policy.nz</h3>
+        <p>Summarises party policies topic by topic in plain, consistent language, with links to the original sources. It also lists each electorate's candidates, and can hide which party wrote each policy so you judge the idea first.</p>
+        <p class="tool-note">Run by Policy Limited, an independent, politically neutral project covering New Zealand elections since 2017. Not connected to Know Your Votes.</p>
+        <a class="d-video tool-go" href="https://policy.nz/2026">Open Policy.nz</a>
+      </div>
+      <div class="tool-card">
+        <h3>1News Vote Compass</h3>
+        <p>Rate 30 statements on issues such as tax, public services, crime and the Treaty, and pick what matters most to you. It then compares your views with each party, issue by issue.</p>
+        <p class="tool-note">Built by Vox Pop Labs with New Zealand political scientists, from published policies and public statements, then reviewed with the parties. A starting point, not a recommendation: it doesn't measure leadership, trust, local candidates or coalition options. Check its privacy notice first. Not connected to Know Your Votes.</p>
+        <a class="d-video tool-go" href="https://votecompass.tvnz.co.nz/">Open Vote Compass</a>
+      </div>
     </div>
     <details class="more" id="how-chosen">
       <summary>How we chose these</summary>
       <ul id="how-list"></ul>
     </details>
-  </section>
-
-  <section id="compare" class="wrap block" aria-labelledby="compare-title">
-    <h2 id="compare-title">Vote Compass</h2>
-    <p class="lede">Start from your own views and see which parties are closest.</p>
-    <div class="tool-card">
-      <h3>From 1News, for the 2026 election</h3>
-      <p>Rate 30 statements on issues such as tax, public services, crime and the Treaty, and pick what matters most to you. It then compares your views with each party, issue by issue.</p>
-      <p>Party positions were set by Vox Pop Labs and New Zealand political scientists from published policies and public statements, then reviewed with the parties.</p>
-      <p class="tool-note">A starting point, not a recommendation: it doesn't measure leadership, trust, local candidates or coalition options. Check its privacy notice first. Not connected to Know Your Votes.</p>
-      <a class="d-video tool-go" href="https://votecompass.tvnz.co.nz/">Open Vote Compass</a>
-    </div>
   </section>
 
   <section id="polls" class="wrap block" aria-labelledby="polls-title">
@@ -272,6 +271,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=20261018o"></script>
+<script src="assets/app.js?v=20261019a"></script>
 </body>
 </html>
