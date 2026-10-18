@@ -925,3 +925,14 @@
   document.addEventListener("pointerdown", function (e) { if (d.open && !d.contains(e.target)) d.open = false; });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && d.open) { d.open = false; d.querySelector("summary").focus(); } });
 })();
+
+/* Header menu: when it doesn't fit (phones turned sideways), fade its right edge so people know it scrolls */
+(function () {
+  var nav = document.getElementById("site-nav");
+  if (!nav) return;
+  function check() { nav.classList.toggle("more-right", nav.scrollWidth - nav.clientWidth - nav.scrollLeft > 4); }
+  nav.addEventListener("scroll", check, { passive: true });
+  window.addEventListener("resize", check);
+  window.addEventListener("load", check);
+  check();
+})();
