@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-16",
+  "checked": "2026-10-18",
   "sections": {
     "dates": [
       {
@@ -216,6 +216,12 @@
         "publisher": "MĀORI+",
         "url": "https://www.maoriplus.co.nz/live",
         "supports": "live stream of the upcoming Whakaata Māori debates (Te Tai Tokerau, Tāmaki Makaurau, Anamata and the Māori Leaders' Debate)"
+      },
+      {
+        "title": "Put your questions to the next PM (Stuff, 15 Oct): \"Next Tuesday at 7pm\"",
+        "publisher": "Stuff",
+        "url": "https://www.stuff.co.nz/politics/361046720/put-your-questions-next-pm",
+        "supports": "Start time (7pm) of Stuff's Leaders' Debate on Tuesday 20 October"
       }
     ],
     "parties": [
@@ -323,14 +329,14 @@
     "polls": "How the 14-day average is worked out: an average of every poll whose fieldwork finished in the 14 days up to and including each date, weighted by sample size (1,000 assumed if not reported). This is our own calculation from the figures in the poll table, not a pollster's."
   },
   "checked_sections": {
-    "dates": "2026-10-16",
-    "votes": "2026-10-16",
-    "polls": "2026-10-16",
-    "seats": "2026-10-16",
-    "policies": "2026-10-16",
-    "compare": "2026-10-16",
-    "debates": "2026-10-16",
-    "parties": "2026-10-16",
-    "before": "2026-10-16"
+    "dates": "2026-10-18",
+    "votes": "2026-10-18",
+    "polls": "2026-10-18",
+    "seats": "2026-10-18",
+    "policies": "2026-10-18",
+    "compare": "2026-10-18",
+    "debates": "2026-10-18",
+    "parties": "2026-10-18",
+    "before": "2026-10-18"
   }
 }

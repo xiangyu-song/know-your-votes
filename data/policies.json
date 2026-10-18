@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-17",
+  "checked": "2026-10-18",
   "display": {
     "quote_label": "In their words:",
     "not_covered": "Not covered on {party}'s 2026 policy pages (checked {date}).",
@@ -1347,13 +1347,13 @@
   "verification": "Every quote was checked word for word against its linked page (first check 15 Oct 2026; 20 corrected. 17 Oct: every quote re-checked against the visible page; 35 replaced with visible wording, specific commitments, start dates and conditions). Policy pages are re-checked regularly; each \"Not covered\" note shows when that party's pages were last checked.",
   "topic_order_source": "https://www.ipsos.com/en-nz/ipsos-issues-monitor-july-2026",
   "checked_pages": {
-    "ACT": "2026-10-17",
-    "Green": "2026-10-17",
-    "Labour": "2026-10-17",
-    "National": "2026-10-17",
-    "NZ First": "2026-10-17",
-    "Opportunity": "2026-10-17",
-    "Te Pāti Māori": "2026-10-17",
-    "Te Tai Tokerau Party": "2026-10-17"
+    "ACT": "2026-10-18",
+    "Green": "2026-10-18",
+    "Labour": "2026-10-18",
+    "National": "2026-10-18",
+    "NZ First": "2026-10-18",
+    "Opportunity": "2026-10-18",
+    "Te Pāti Māori": "2026-10-18",
+    "Te Tai Tokerau Party": "2026-10-18"
   }
 }

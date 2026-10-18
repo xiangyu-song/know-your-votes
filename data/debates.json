@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-17",
+ "checked": "2026-10-18",
  "note": "Links only — broadcasts and articles are never copied. Times shown only where the broadcaster stated them.",
  "debates": [
   {
@@ -59,6 +59,7 @@
   },
   {
    "date": "2026-10-20",
+   "time": "7pm",
    "name": "Stuff Leaders' Debate",
    "host": "Stuff",
    "where": "Stuff, The Post and The Press websites",
