@@ -737,10 +737,13 @@
       out.appendChild(verdict ? el("p", { "class": "seat-verdict" + (sum >= need ? " yes" : ""), text: verdict })
         : el("p", { "class": "seat-verdict empty", text: "Tick “Add up” to see if parties reach " + need + "." }));
       // Say why a party shows 0 seats, right under the result.
-      if (overhang) out.appendChild(el("p", { "class": "seat-zero", text: "Overhang: a party that wins more electorates than its party vote earns keeps those seats, and Parliament grows above 120." }));
-      codes.forEach(function (c) { if (state[c].np) out.appendChild(el("p", { "class": "seat-zero", text: "\u2013 " + NAMES[c] + " isn't reported separately in most polls, so its party vote starts empty. Type a figure to try one." })); });
-      if (codes.some(function (c) { return !seats[c]; })) out.appendChild(el("p", { "class": "seat-zero", text: "0 seats: the party is under 5% of the party vote with no electorate ticked. Tick Wins electorate to see what changes." }));
-      out.appendChild(el("p", { "class": "seat-note", text: "Adding up seats is arithmetic only. It doesn't show which parties are willing to work together." }));
+      // Notes sit under the calculator on phones and in a column to the right on wide screens.
+      var notes = el("div", { "class": "seat-notes" });
+      if (overhang) notes.appendChild(el("p", { "class": "seat-zero", text: "Overhang: a party that wins more electorates than its party vote earns keeps those seats, and Parliament grows above 120." }));
+      codes.forEach(function (c) { if (state[c].np) notes.appendChild(el("p", { "class": "seat-zero", text: "\u2013 " + NAMES[c] + " isn't reported separately in most polls, so its party vote starts empty. Type a figure to try one." })); });
+      if (codes.some(function (c) { return !seats[c]; })) notes.appendChild(el("p", { "class": "seat-zero", text: "0 seats: the party is under 5% of the party vote with no electorate ticked. Tick Wins electorate to see what changes." }));
+      notes.appendChild(el("p", { "class": "seat-note", text: "Adding up seats is arithmetic only. It doesn't show which parties are willing to work together." }));
+      out.appendChild(notes);
       clearTimeout(liveTimer);
       liveTimer = setTimeout(function () { live.textContent = codes.filter(function (c) { return seats[c]; }).map(function (c) { return NAMES[c] + " " + seats[c]; }).join(", ") + ". " + house + " seats in total. " + verdict; }, 600);
     }
