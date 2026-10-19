@@ -629,6 +629,14 @@
     window.addEventListener("scroll", function () { var s2 = window.scrollY > window.innerHeight * 1.5; if (s2 !== shown) { shown = s2; b.hidden = !s2; } }, { passive: true });
   })();
 
+  /* ---------- "How we chose these" link: open the box it points to ---------- */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a.open-how");
+    if (!a) return;
+    var d = document.getElementById("how-chosen");
+    if (d) d.open = true;
+  });
+
   /* ---------- Site name: back to the top of the page ---------- */
   (function () {
     var home = document.querySelector(".home-link");

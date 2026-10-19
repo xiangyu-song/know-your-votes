@@ -1015,3 +1015,6 @@ details.more[open] > summary::before, .more-rules[open] > summary::before { tran
 /* Bigger tap area on touchscreens without making the header taller */
 .home-link { position: relative; }
 @media (pointer: coarse) { .home-link::after { content: ""; position: absolute; inset: -9px -6px; } }
+
+/* Two-line intro in Policies: keep the lines together */
+.lede.lede-first { margin-bottom: 0.5rem; }
