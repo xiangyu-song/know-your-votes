@@ -915,6 +915,12 @@
 
     var u = new Date(r[5].updated);
     document.getElementById("updated").textContent = "Updated " + new Intl.DateTimeFormat("en-NZ", { timeZone: "Pacific/Auckland", day: "numeric", month: "short", year: "numeric", hour: "numeric", minute: "2-digit" }).format(u) + " (NZ time)";
+    // A link to a section (like …/#polls) is followed before the content above it has loaded, so it can land in the wrong place. Jump again now.
+    if (location.hash.length > 1) {
+      var dest = null;
+      try { dest = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (e) { dest = null; }
+      if (dest) requestAnimationFrame(function () { try { dest.scrollIntoView({ behavior: "instant" }); } catch (e) { dest.scrollIntoView(); } });
+    }
   }).catch(function () {
     fail(document.getElementById("main"), "election information");
   });
