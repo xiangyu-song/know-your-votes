@@ -45,29 +45,9 @@ An **Other languages** button at the top links to the Electoral Commission's off
 
 A daily update runs at 7pm NZ time. Each update re-checks polls, debates, enrolment figures, every party's policy pages and quotes, and every source. It then updates the "checked" dates on the site, runs the layout and calculator tests, publishes, and sends the owner a short report. Any change to a party's policy quotes needs the owner's approval before it goes live. There are no updates on election day.
 
-## How it's built
+## How it was made
 
-A plain static website hosted on GitHub Pages, with no build step, no tracking and no cookies.
-
-```
-index.html                 the page
-assets/app.js              reads the data and builds each section
-assets/style.css           layout, light and dark mode
-assets/manifest.webmanifest, assets/img/   home-screen icon
-data/*.json                all content: dates, enrolment, polls, policies,
-                           parties, debates, glossary, sources, site settings
-                           (updates.json is an internal change log, not shown)
-```
-
-Content changes are made in `data/`, so no code needs to change. When `app.js` or `style.css` changes, bump the `?v=` tag where `index.html` loads them, so phones don't mix new content with old cached styles.
-
-To preview the site on your own computer, run this in the project folder:
-
-```
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000.
+Built with AI, checked by a person. Xiangyu set the scope, the neutrality and accuracy rules and the design, tested every change on real devices and approved it before release. Claude (an AI assistant made by Anthropic) wrote the code, gathered and checked the sources, and ran the tests.
 
 ## Feedback
 
