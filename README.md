@@ -19,14 +19,8 @@ It works on phones, tablets and computers, in light and dark mode:
 | **Your two votes** | How your party vote and electorate vote work under MMP, with the Electoral Commission's own 2-minute explainer video |
 | **Policies** | 11 topics × 8 parties, quoted word for word from each party's own website, with links to the full policy. View by topic or by party. Two independent comparison tools side by side (Policy.nz and 1News Vote Compass), and every party on the ballot |
 | **Polls** | The latest 14-day poll average, a chart since August (each dot is one poll's result, each line a 14-day average; tap any point to see which polls it uses), every poll with its source, and a seat calculator |
-| **Debates** | Upcoming and past debates, with "Watch on…" and "Watch again on…" links to the broadcaster's own site. Ends with **Election news** (see below) |
+| **Debates** | Upcoming and past debates, with "Watch on…" and "Watch again on…" links to the broadcaster's own site. Ends with links to seven newsrooms' Election 2026 pages for day-to-day news |
 | **Before you vote** | Five quick steps before you vote, how to vote, accessible formats, and how to add the site to your phone's home screen |
-
-### Election news
-
-At the end of the Debates section, an **Election news** card links to the Election 2026 page of seven New Zealand newsrooms, listed A to Z so none is favoured: 1News, Newsroom, NZ Herald, RNZ, Stuff, Te Ao Māori News and The Spinoff. It's there for day-to-day campaign coverage, which the site itself doesn't summarise. The newsrooms are independent and not connected to Know Your Votes; their reporting and opinion pieces are their own, and some stories may need a subscription.
-
-### Other languages
 
 An **Other languages** button at the top links to the Electoral Commission's official translations. The site does not use machine translation.
 
@@ -50,10 +44,6 @@ An **Other languages** button at the top links to the Electoral Commission's off
 ## Keeping it up to date
 
 A daily update runs at 7pm NZ time. Each update re-checks polls, debates, enrolment figures, every party's policy pages and quotes, and every source. It then updates the "checked" dates on the site, runs the layout and calculator tests, publishes, and sends the owner a short report. Any change to a party's policy quotes needs the owner's approval before it goes live. There are no updates on election day.
-
-## How it was made
-
-Built with AI, checked by a person. Xiangyu set the scope, the neutrality and accuracy rules and the design, tested every change on real devices and approved it before release. Claude (an AI assistant made by Anthropic) wrote the code, gathered and checked the sources, and ran the tests.
 
 ## How it's built
 
