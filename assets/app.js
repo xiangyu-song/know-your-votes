@@ -629,6 +629,21 @@
     window.addEventListener("scroll", function () { var s2 = window.scrollY > window.innerHeight * 1.5; if (s2 !== shown) { shown = s2; b.hidden = !s2; } }, { passive: true });
   })();
 
+  /* ---------- Site name: back to the top of the page ---------- */
+  (function () {
+    var home = document.querySelector(".home-link");
+    if (!home) return;
+    home.addEventListener("click", function (e) {
+      // Phones (one tab at a time): the link goes to the Dates tab as normal; if already there, just scroll up.
+      if (document.body.classList.contains("tabbed") && location.hash !== "#dates") return;
+      e.preventDefault();
+      var hdr = document.querySelector(".top"); if (hdr) hdr.classList.remove("open");
+      if (location.hash && window.history && history.replaceState) history.replaceState(null, "", location.pathname + location.search);
+      var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+      try { window.scrollTo({ top: 0, behavior: calm ? "auto" : "smooth" }); } catch (err) { window.scrollTo(0, 0); }
+    });
+  })();
+
   /* ---------- Seat calculator (what-if, Sainte-Laguë) ---------- */
   function sainteLague(votes, seats) {
     var q = [];
