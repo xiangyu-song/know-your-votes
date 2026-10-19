@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-18",
+  "checked": "2026-10-19",
   "sections": {
     "dates": [
       {
@@ -121,7 +121,7 @@
         "title": "Ipsos Issues Monitor, July 2026",
         "publisher": "Ipsos New Zealand",
         "url": "https://www.ipsos.com/en-nz/ipsos-issues-monitor-july-2026",
-        "supports": "The order of the first four topics (the issues New Zealanders rated most important)"
+        "supports": "The order of the first three topics (the issues New Zealanders rated most important)"
       },
       {
         "title": "Policy.nz – NZ Election 2026",
@@ -327,13 +327,13 @@
     "polls": "How the 14-day average is worked out: an average of every poll whose fieldwork finished in the 14 days up to and including each date, weighted by sample size (1,000 assumed if not reported). This is our own calculation from the figures in the poll table, not a pollster's."
   },
   "checked_sections": {
-    "dates": "2026-10-18",
-    "votes": "2026-10-18",
+    "dates": "2026-10-19",
+    "votes": "2026-10-19",
     "polls": "2026-10-18",
-    "seats": "2026-10-18",
-    "policies": "2026-10-18",
-    "debates": "2026-10-18",
-    "parties": "2026-10-18",
-    "before": "2026-10-18"
+    "seats": "2026-10-19",
+    "policies": "2026-10-19",
+    "debates": "2026-10-19",
+    "parties": "2026-10-19",
+    "before": "2026-10-19"
   }
 }

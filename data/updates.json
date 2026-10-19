@@ -2,6 +2,10 @@
  "updates": [
   {
    "date": "2026-10-19",
+   "text": "Policies 'How we chose these': topic-order note corrected. The Ipsos Issues Monitor (July 2026) lists cost of living, healthcare and the economy as the top three issues; its fourth is unemployment, not housing. Note now says the top three come first, then housing, then the rest A to Z."
+  },
+  {
+   "date": "2026-10-19",
    "text": "Desktop layout: wider page with three columns of party and debate cards; MMP video beside the two-vote cards; Vote Compass and Policy.nz shown as equal cards under Policies (Vote Compass menu item removed); quieter Sources links; shorter election-day timeline label."
   },
   {
