@@ -19,8 +19,14 @@ It works on phones, tablets and computers, in light and dark mode:
 | **Your two votes** | How your party vote and electorate vote work under MMP, with the Electoral Commission's own 2-minute explainer video |
 | **Policies** | 11 topics × 8 parties, quoted word for word from each party's own website, with links to the full policy. View by topic or by party. Two independent comparison tools side by side (Policy.nz and 1News Vote Compass), and every party on the ballot |
 | **Polls** | The latest 14-day poll average, a chart since August (each dot is one poll's result, each line a 14-day average; tap any point to see which polls it uses), every poll with its source, and a seat calculator |
-| **Debates** | Upcoming and past debates, with "Watch on…" and "Watch again on…" links to the broadcaster's own site, plus links to seven newsrooms' Election 2026 pages (1News, Newsroom, NZ Herald, RNZ, Stuff, Te Ao Māori News, The Spinoff, listed A to Z) |
+| **Debates** | Upcoming and past debates, with "Watch on…" and "Watch again on…" links to the broadcaster's own site. Ends with **Election news** (see below) |
 | **Before you vote** | Five quick steps before you vote, how to vote, accessible formats, and how to add the site to your phone's home screen |
+
+### Election news
+
+At the end of the Debates section, an **Election news** card links to the Election 2026 page of seven New Zealand newsrooms, listed A to Z so none is favoured: 1News, Newsroom, NZ Herald, RNZ, Stuff, Te Ao Māori News and The Spinoff. It's there for day-to-day campaign coverage, which the site itself doesn't summarise. The newsrooms are independent and not connected to Know Your Votes; their reporting and opinion pieces are their own, and some stories may need a subscription.
+
+### Other languages
 
 An **Other languages** button at the top links to the Electoral Commission's official translations. The site does not use machine translation.
 
