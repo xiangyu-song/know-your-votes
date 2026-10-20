@@ -2,6 +2,10 @@
  "updates": [
   {
    "date": "2026-10-20",
+   "text": "Seat calculator: no longer shows an 'over 100%' warning at the starting poll averages. Pollsters round their published figures, so the averages can add up to slightly more than 100% (100.5% today)."
+  },
+  {
+   "date": "2026-10-20",
    "text": "Polls: added the 1News–Verian poll (15–19 Oct, 1,003 voters): National 32, Labour 27, Green 16, ACT 11, NZ First 8, Opportunity 7, Te Pāti Māori 0.7."
   },
   {

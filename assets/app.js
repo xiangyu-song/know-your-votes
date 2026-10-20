@@ -722,6 +722,9 @@
         if (document.activeElement !== r.count) r.count.value = state[c].e > 0 ? state[c].e : "";
       });
       var total = codes.reduce(function (s, c) { return s + state[c].v; }, 0);
+      // Published poll figures are rounded, so the starting averages can add up to a little over 100%. Only warn about that once someone changes a figure (or if it's well over).
+      var atStart = codes.every(function (c) { return state[c].v === (pollAverage[c] || 0); });
+      var overLimit = atStart ? 102 : 100.05;
       var qual = {}; codes.forEach(function (c) { if (state[c].v >= 5 || state[c].e > 0) qual[c] = state[c].v; });
       var ent = Object.keys(qual).length ? sainteLague(qual, 120) : {};
       var seats = {}, overhang = 0;
@@ -741,7 +744,7 @@
       var elecTotal = codes.reduce(function (s, c) { return s + state[c].e; }, 0);
       function head(target, labelled) {
         target.innerHTML = "";
-        if (total > 100.05) target.appendChild(el("p", { "class": "seat-warn", text: "The party votes add up to " + total.toFixed(1) + "%, which is more than 100%. Lower some parties to make the result realistic." }));
+        if (total > overLimit) target.appendChild(el("p", { "class": "seat-warn", text: "The party votes add up to " + total.toFixed(1) + "%, which is more than 100%. Lower some parties to make the result realistic." }));
         if (elecTotal > 71) target.appendChild(el("p", { "class": "seat-warn", text: "The electorates won add up to " + elecTotal + ", but there are only 71 electorates. Lower some parties to make the result realistic." }));
         var bar = el("div", labelled ? { "class": "seat-bar", role: "img", "aria-label": codes.filter(function (c) { return seats[c]; }).map(function (c) { return NAMES[c] + " " + seats[c]; }).join(", ") + " seats" } : { "class": "seat-bar" });
         // Parties ticked in "Add up" go first, so their combined seats can be read against the majority line.
