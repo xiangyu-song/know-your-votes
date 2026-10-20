@@ -175,9 +175,25 @@
       "OPP": 8,
       "source": "https://www.1news.co.nz/2026/10/13/poll-hipkins-and-luxon-now-neck-and-neck-opportunity-on-track-for-10-mps/",
       "commissioned_by": "Commissioned by 1News (TVNZ); conducted by Verian"
+    },
+    {
+      "pollster": "1News–Verian",
+      "fieldwork": "15–19 Oct 2026",
+      "end": "2026-10-19",
+      "sample": 1003,
+      "NAT": 32,
+      "LAB": 27,
+      "GRN": 16,
+      "ACT": 11,
+      "NZF": 8,
+      "TPM": 0.7,
+      "OPP": 7,
+      "source": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/",
+      "commissioned_by": "Commissioned by 1News (TVNZ); conducted by Verian",
+      "note": "(Te Pāti Māori figure from interest.co.nz; 1News reports it as under 1%.)"
     }
   ],
   "not_included": "Not included because we couldn't confirm the figures from a published report we could check: Talbot Mills (August), Anacta (September) and RNZ–Reid Research (August). We'll add them if we can.",
   "average_method": "Roy Morgan's fieldwork runs over about four weeks, so it's placed at the date fieldwork ended.",
-  "checked": "2026-10-19"
+  "checked": "2026-10-20"
 }

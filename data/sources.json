@@ -69,6 +69,12 @@
         "publisher": "University of Auckland (Satherley, Sporle and Greaves)",
         "url": "https://www.auckland.ac.nz/en/news/2023/08/02/election-countdown--how-to-read-the-polls.html",
         "supports": "the margin of error is largest for a party near 50% and smaller for parties polling lower, such as around 5%"
+      },
+      {
+        "title": "National jumps into the 30s in the latest 1News Poll",
+        "publisher": "interest.co.nz",
+        "url": "https://www.interest.co.nz/public-policy/140754/national-jumps-32-labour-falls-27-latest-political-poll",
+        "supports": "Te Pāti Māori's 0.7% in the 1News–Verian poll of 15–19 Oct"
       }
     ],
     "policies": [
@@ -234,6 +240,12 @@
         "publisher": "Stuff",
         "url": "https://www.stuff.co.nz/politics/361046720/put-your-questions-next-pm",
         "supports": "Start time (7pm) of Stuff's Leaders' Debate on Tuesday 20 October"
+      },
+      {
+        "title": "Tune in for the final leaders' debate tonight 7.30pm, on stuff.co.nz (Stuff video)",
+        "publisher": "Stuff",
+        "url": "https://www.youtube.com/watch?v=fw9FrhgGICI",
+        "supports": "Start time of the Stuff Leaders' Debate: 7.30pm, 20 October"
       }
     ],
     "parties": [
