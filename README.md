@@ -49,6 +49,10 @@ A daily update runs at 7pm NZ time. Each update re-checks polls, debates, enrolm
 
 Built with AI, checked by a person. Xiangyu set the scope, the neutrality and accuracy rules and the design, tested every change on real devices and approved it before release. Claude (an AI assistant made by Anthropic) wrote the code, gathered and checked the sources, and ran the tests.
 
+## Privacy
+
+The site counts visits with [GoatCounter](https://www.goatcounter.com/), a privacy-friendly, open-source visit counter. It uses no cookies and collects no personal information: only page visits, the site a visitor came from, device type and country. Nothing about it is shown on the page.
+
 ## Feedback
 
 Spotted a mistake or have a suggestion? Open an issue on this repository or message Xiangyu on [LinkedIn](https://www.linkedin.com/in/xiangyusong/).

@@ -1,5 +1,5 @@
 /* Know Your Votes — renders everything from the JSON files in /data.
-   No tracking, no cookies, no storage of personal data. */
+   No cookies and no storage of personal data. Visits are counted by GoatCounter (see index.html), which uses no cookies. */
 (function () {
   "use strict";
 
