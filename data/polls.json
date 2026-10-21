@@ -191,9 +191,25 @@
       "source": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/",
       "commissioned_by": "Commissioned by 1News (TVNZ); conducted by Verian",
       "note": "(Te Pāti Māori figure from interest.co.nz; 1News reports it as under 1%.)"
+    },
+    {
+      "pollster": "The Post–Freshwater Strategy",
+      "fieldwork": "9–19 Oct 2026",
+      "end": "2026-10-19",
+      "sample": 1458,
+      "NAT": 27.6,
+      "LAB": 28.7,
+      "GRN": 14.3,
+      "ACT": 9.0,
+      "NZF": 11.8,
+      "TPM": 2.0,
+      "OPP": 5.4,
+      "source": "https://www.interest.co.nz/public-policy/140754/national-jumps-32-labour-falls-27-latest-political-poll",
+      "commissioned_by": "Published by The Post; conducted by Freshwater Strategy",
+      "note": "(Party figures, dates and sample from interest.co.nz; Opportunity's 5.4% and the pollster's name from The Conversation's poll watch on NZCity.)"
     }
   ],
   "not_included": "Not included because we couldn't confirm the figures from a published report we could check: Talbot Mills (August), Anacta (September) and RNZ–Reid Research (August). We'll add them if we can.",
   "average_method": "Roy Morgan's fieldwork runs over about four weeks, so it's placed at the date fieldwork ended.",
-  "checked": "2026-10-20"
+  "checked": "2026-10-21"
 }

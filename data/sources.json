@@ -75,6 +75,12 @@
         "publisher": "interest.co.nz",
         "url": "https://www.interest.co.nz/public-policy/140754/national-jumps-32-labour-falls-27-latest-political-poll",
         "supports": "Te Pāti Māori's 0.7% in the 1News–Verian poll of 15–19 Oct"
+      },
+      {
+        "title": "NZ election poll watch (The Conversation, via NZCity), 21 Oct",
+        "publisher": "NZCity",
+        "url": "https://home.nzcity.co.nz/news/article.aspx?id=456403",
+        "supports": "The Post–Freshwater Strategy poll of 9–19 Oct (1,458 people): pollster name and Opportunity's 5.4%"
       }
     ],
     "policies": [
@@ -246,6 +252,18 @@
         "publisher": "Stuff",
         "url": "https://www.youtube.com/watch?v=fw9FrhgGICI",
         "supports": "Start time of the Stuff Leaders' Debate: 7.30pm, 20 October"
+      },
+      {
+        "title": "Election 2026: Herald Powerbrokers' debate - Winston Peters, David Seymour, Marama Davidson and Qiulae Wong",
+        "publisher": "NZ Herald",
+        "url": "https://www.nzherald.co.nz/nz/politics/election-2026-herald-powerbrokers-debate-winston-peters-david-seymour-marama-davidson-and-qiulae-wong/772YRVQARJHQFECRVBQL7YUDNM/",
+        "supports": "Who takes part in the Powerbrokers' Debate (from the headline; the site blocks automated reading)"
+      },
+      {
+        "title": "Missed the Stuff Leaders' Debate? Watch it back in full",
+        "publisher": "Stuff",
+        "url": "https://www.stuff.co.nz/politics/361048840/missed-stuff-leaders-debate-watch-it-back-full",
+        "supports": "Replay link for the Stuff Leaders' Debate"
       }
     ],
     "parties": [

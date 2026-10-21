@@ -1,6 +1,14 @@
 {
  "updates": [
   {
+   "date": "2026-10-21",
+   "text": "Polls: added The Post–Freshwater Strategy poll (9–19 Oct, 1,458 people): National 27.6, Labour 28.7, Green 14.3, ACT 9.0, NZ First 11.8, Opportunity 5.4, Te Pāti Māori 2.0."
+  },
+  {
+   "date": "2026-10-21",
+   "text": "Debates: Stuff Leaders' Debate now links to its full replay; Powerbrokers' Debate participants added (ACT, Green, NZ First, Opportunity)."
+  },
+  {
    "date": "2026-10-20",
    "text": "Seat calculator: no longer shows an 'over 100%' warning at the starting poll averages. Pollsters round their published figures, so the averages can add up to slightly more than 100% (100.5% today)."
   },

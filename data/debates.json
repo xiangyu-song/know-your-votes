@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-20",
+ "checked": "2026-10-21",
  "note": "Links only — broadcasts and articles are never copied. Times shown only where the broadcaster stated them.",
  "debates": [
   {
@@ -66,8 +66,8 @@
    "who": "National (Christopher Luxon), Labour (Chris Hipkins)",
    "link": "https://www.stuff.co.nz/politics/361044506/two-leaders-debates-interactive-multichannel-election-night-special-stuff-group-launches-aotearoa",
    "watch": {
-    "url": "https://www.stuff.co.nz/",
-    "checked": "page opened",
+    "url": "https://www.stuff.co.nz/politics/361048840/missed-stuff-leaders-debate-watch-it-back-full",
+    "checked": "page opened 21 Oct",
     "on": "Stuff"
    }
   },
@@ -76,10 +76,10 @@
    "name": "The Powerbrokers' Debate",
    "host": "NZ Herald / NZME",
    "where": "NZ Herald app, website and YouTube, Three and ThreeNow",
-   "who": "Leaders of parties likely to be in coalition talks (not yet named)",
+   "who": "ACT (David Seymour), Green (Marama Davidson), NZ First (Winston Peters), Opportunity (Qiulae Wong)",
    "link": "https://www.nzme.co.nz/news/nzme-unveils-its-biggest-ever-election-coverage-for-2026",
    "watch": {
-    "url": "https://www.nzherald.co.nz/promotions/the-new-zealand-herald-debate-series/DJBGX6TQLFGAVJKQY5V7XPVI2U/",
+    "url": "https://www.nzherald.co.nz/nz/politics/election-2026-herald-powerbrokers-debate-winston-peters-david-seymour-marama-davidson-and-qiulae-wong/772YRVQARJHQFECRVBQL7YUDNM/",
     "checked": "search result only; site blocks automated checks",
     "on": "NZ Herald"
    }
