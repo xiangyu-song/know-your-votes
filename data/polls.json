@@ -205,11 +205,27 @@
       "TPM": 2.0,
       "OPP": 5.4,
       "source": "https://www.interest.co.nz/public-policy/140754/national-jumps-32-labour-falls-27-latest-political-poll",
-      "commissioned_by": "Published by The Post; conducted by Freshwater Strategy",
+      "commissioned_by": "Published by The Post; funded by Infrastructure NZ (per interest.co.nz); conducted by Freshwater Strategy",
       "note": "(Party figures, dates and sample from interest.co.nz; Opportunity's 5.4% and the pollster's name from The Conversation's poll watch on NZCity.)"
+    },
+    {
+      "pollster": "1News–Verian",
+      "fieldwork": "21–25 Oct 2026",
+      "end": "2026-10-25",
+      "sample": 1000,
+      "NAT": 29,
+      "LAB": 27,
+      "GRN": 15,
+      "ACT": 12,
+      "NZF": 10,
+      "TPM": 0.1,
+      "OPP": 6,
+      "source": "https://www.interest.co.nz/public-policy/140846/national-drops-29-support-latest-1news-verian-poll-still-ahead-labours-27",
+      "commissioned_by": "Commissioned by 1News (TVNZ); conducted by Verian",
+      "note": "(Figures from interest.co.nz's report of the 1News poll.)"
     }
   ],
   "not_included": "Not included because we couldn't confirm the figures from a published report we could check: Talbot Mills (August), Anacta (September) and RNZ–Reid Research (August). We'll add them if we can.",
   "average_method": "Roy Morgan's fieldwork runs over about four weeks, so it's placed at the date fieldwork ended.",
-  "checked": "2026-10-22"
+  "checked": "2026-10-27"
 }
