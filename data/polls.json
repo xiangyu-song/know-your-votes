@@ -220,12 +220,11 @@
       "NZF": 10,
       "TPM": 0.1,
       "OPP": 6,
-      "source": "https://www.interest.co.nz/public-policy/140846/national-drops-29-support-latest-1news-verian-poll-still-ahead-labours-27",
-      "commissioned_by": "Commissioned by 1News (TVNZ); conducted by Verian",
-      "note": "(Figures from interest.co.nz's report of the 1News poll.)"
+      "source": "https://www.1news.co.nz/2026/10/27/poll-coalition-has-path-to-power-but-labour-steady-amid-gangs-row/",
+      "commissioned_by": "Commissioned by 1News (TVNZ); conducted by Verian"
     }
   ],
   "not_included": "Not included because we couldn't confirm the figures from a published report we could check: Talbot Mills (August), Anacta (September) and RNZ–Reid Research (August). We'll add them if we can.",
   "average_method": "Roy Morgan's fieldwork runs over about four weeks, so it's placed at the date fieldwork ended.",
-  "checked": "2026-10-27"
+  "checked": "2026-10-28"
 }
