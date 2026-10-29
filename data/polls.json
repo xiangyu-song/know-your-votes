@@ -222,9 +222,25 @@
       "OPP": 6,
       "source": "https://www.1news.co.nz/2026/10/27/poll-coalition-has-path-to-power-but-labour-steady-amid-gangs-row/",
       "commissioned_by": "Commissioned by 1News (TVNZ); conducted by Verian"
+    },
+    {
+      "pollster": "RNZ–Reid Research",
+      "fieldwork": "20–26 Oct 2026",
+      "end": "2026-10-26",
+      "sample": 1000,
+      "NAT": 24.8,
+      "LAB": 30.6,
+      "GRN": 14.5,
+      "ACT": 10.1,
+      "NZF": 9.9,
+      "TPM": 1.9,
+      "OPP": 7.2,
+      "source": "https://thespinoff.co.nz/politics/29-10-2026/rnz-reid-research-poll-national-below-disastrous-2020-result-as-opportunity-surges",
+      "commissioned_by": "Commissioned by RNZ; conducted by Reid Research",
+      "note": "(RNZ's report, republished by The Spinoff.)"
     }
   ],
   "not_included": "Not included because we couldn't confirm the figures from a published report we could check: Talbot Mills (August), Anacta (September) and RNZ–Reid Research (August). We'll add them if we can.",
   "average_method": "Roy Morgan's fieldwork runs over about four weeks, so it's placed at the date fieldwork ended.",
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
 }
