@@ -724,7 +724,17 @@
             ]
           }
         ],
-        "Labour": [],
+        "Labour": [
+          {
+            "name": "Safer Online",
+            "quote": "Stronger protections against deepfake abuse, including non-consensual sexual images…",
+            "source_type": "Policy page",
+            "url": "https://www.labour.org.nz/election-policy-pages/safer-online/",
+            "more": [
+              "…powers to take down harmful 'nudify' apps and sites…"
+            ]
+          }
+        ],
         "National": [
           {
             "name": "Modernise Sexual Consent Laws",
