@@ -253,9 +253,25 @@
       "OPP": 6,
       "source": "https://www.1news.co.nz/2026/11/03/final-poll-election-set-to-go-down-to-wire-as-nationals-partners-slip/",
       "commissioned_by": "Commissioned by 1News (TVNZ); conducted by Verian"
+    },
+    {
+      "pollster": "Taxpayers' Union–Curia",
+      "fieldwork": "28 Oct – 3 Nov 2026",
+      "end": "2026-11-03",
+      "sample": 1000,
+      "NAT": 28.9,
+      "LAB": 28.4,
+      "GRN": 14.4,
+      "ACT": 10.5,
+      "NZF": 9.8,
+      "TPM": 1.1,
+      "OPP": 5.8,
+      "source": "https://www.odt.co.nz/news/national/taxpayers-union-curia-poll-projects-hung-parliament-jtsh054d",
+      "commissioned_by": "Commissioned by the Taxpayers' Union; conducted by Curia Market Research",
+      "note": "(Reported by the Otago Daily Times.)"
     }
   ],
   "not_included": "Not included because we couldn't confirm the figures from a published report we could check: Talbot Mills (August), Anacta (September) and RNZ–Reid Research (August). We'll add them if we can.",
   "average_method": "Roy Morgan's fieldwork runs over about four weeks, so it's placed at the date fieldwork ended.",
-  "checked": "2026-11-03"
+  "checked": "2026-11-04"
 }
