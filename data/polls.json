@@ -269,9 +269,25 @@
       "source": "https://www.odt.co.nz/news/national/taxpayers-union-curia-poll-projects-hung-parliament-jtsh054d",
       "commissioned_by": "Commissioned by the Taxpayers' Union; conducted by Curia Market Research",
       "note": "(Reported by the Otago Daily Times.)"
+    },
+    {
+      "pollster": "The Post–Freshwater Strategy",
+      "fieldwork": "29 Oct – 3 Nov 2026",
+      "end": "2026-11-03",
+      "sample": null,
+      "NAT": 26.4,
+      "LAB": 30.7,
+      "GRN": 13.0,
+      "ACT": 9.8,
+      "NZF": 12.0,
+      "TPM": 2.0,
+      "OPP": 5.1,
+      "source": "https://www.odt.co.nz/news/national/final-poll-before-election-puts-labour-ahead-sd3kvp7i",
+      "commissioned_by": "Published by The Post, with Infrastructure NZ (per ODT); conducted by Freshwater Strategy",
+      "note": "(Party figures from the Otago Daily Times; survey dates from The Spinoff. Sample size not reported in either.)"
     }
   ],
   "not_included": "Not included because we couldn't confirm the figures from a published report we could check: Talbot Mills (August), Anacta (September) and RNZ–Reid Research (August). We'll add them if we can.",
   "average_method": "Roy Morgan's fieldwork runs over about four weeks, so it's placed at the date fieldwork ended.",
-  "checked": "2026-11-05"
+  "checked": "2026-11-06"
 }
