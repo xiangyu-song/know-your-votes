@@ -563,7 +563,10 @@
       ]);
     }
     upcoming.forEach(function (d) { list.appendChild(item(d, false)); });
-    if (held.length) {
+    // Once every debate has been held, list them all in the main list, open (newest first), not tucked away.
+    if (held.length && !upcoming.length) {
+      held.forEach(function (d) { list.appendChild(item(d, true)); });
+    } else if (held.length) {
       var pastList = el("ul", { "class": "debate-list" });
       held.forEach(function (d) { pastList.appendChild(item(d, true)); });
       list.insertAdjacentElement("afterend", el("details", { "class": "more past-debates" }, [el("summary", { text: "Past debates: watch again (" + held.length + ")" }), pastList]));
